@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <!-- <div class="outside">
+                <h1>Happy Birthday</h1>
+                <h3></h3>
+            </div> -->
+            <div class="inside">
+                <img src="cakegif.gif"/>
+                <h3>My dear Lale,may god bless you with abundant joy on your birthday and always!<br>
+                    Thank you for always being in my life, by my side, having my back and always supporting me.
+                </h3>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="frames frame1">
+                <img src="img1.jpg" alt="">
+                <p>Keep smiling,Keep shining Keep making everyone feel proud</p>
+            </div>
+            <div class="frames frame2">
+                <img src="img2.jpg" alt="">
+                <p>On this occasion bring you lot of happiness and success
+                    Ameen.
+                </p>
+            </div>
+            <div class="frames frame3">
+                <img src="img3.jpg" alt="">
+                <p>May God bless you on your birthday, and always</p>
+            </div>
+        </div>
+        <button id="music-btn">Tap for Music</button>
+        <audio id="myAudio">
+          <source src="Happy Birthday song-[AudioTrimmer.com].mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script>
+     // JavaScript code to play/pause music on button click
+    var audio = document.getElementById('myAudio');
+    var musicBtn = document.getElementById('music-btn');
+    
+    musicBtn.addEventListener('click', function() {
+      if (audio.paused) {
+        audio.play();
+        musicBtn.textContent = 'Tap to Pause';
+      } else {
+        audio.pause();
+        musicBtn.textContent = 'Tap for Music';
+      }
+    });
+      </script>
+</body>
+</html>
